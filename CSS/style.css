@@ -6,7 +6,8 @@
 
 :root {
   --white: #ffffff;
-  --grey: #706f6885;
+  --grey: #292323ad;
+  --lightgrey: #706f6885;
 }
 html {
   font-size: 10px;
@@ -93,13 +94,13 @@ nav {
 }
 main {
   width: 70%;
-  border-right: 2px solid var(--grey);
+  border-right: 2px solid var(--lightgrey);
   padding: 3rem;
 }
 
 .cnt-tab {
   display: flex;
-  border-bottom: 1px solid var(--grey);
+  border-bottom: 1px solid var(--lightgrey);
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 2rem;
@@ -152,12 +153,12 @@ main {
 }
 
 .cnt-article-footer {
-  color: var(--grey);
+  color: var(--lightgrey);
 }
 .cnt-article-footer :nth-child(3) {
   border-radius: 2.5rem;
   padding: 0.2rem;
-  background-color: var(--grey);
+  background-color: var(--lightgrey);
 }
 
 .cnt-article-footer ion-icon {
@@ -180,7 +181,7 @@ aside {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid var(--grey);
+  border-bottom: 1px solid var(--lightgrey);
   padding-bottom: 1rem;
 }
 
@@ -194,7 +195,7 @@ aside {
 }
 
 .cnt-aside.ctn-social a {
-  color: var(--grey);
+  color: var(--lightgrey);
 }
 .cnt-aside-title {
   align-self: start;
@@ -215,13 +216,13 @@ aside {
 {
   border-radius: 25px;
   padding: 0.5rem;
-  background-color: var(--grey);
+  background-color: var(--lightgrey);
   margin: 1rem;
 }
 .cnt-aside.cnt-recommendation span {
   border-radius: 25px;
   padding: 0.5rem;
-  background-color: #706f6885;
+  background-color: var(--lightgrey);
   margin: 1rem;
 }
 
@@ -241,7 +242,6 @@ aside {
 .profession {
   font-size: 1rem;
 }
-
 .cnt-flex-button {
   display: flex;
   justify-content: center;
@@ -256,4 +256,47 @@ aside {
 }
 .cnt-info{
   margin-right: 2rem;
+}
+.cnt-recently-saved
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.author-saved-article
+{
+  display: flex;
+  align-items: center;
+}
+.author-saved-article p
+{
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  font-weight: 700;
+}
+.title-saved-article p
+{
+  margin-left: 1rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+}
+.cnt-saved-article{
+
+  margin-top: 2rem;
+}
+.cnt-recently-saved a{
+  margin-top: 2rem;
+  color: green;
+  text-decoration: none;
+}
+footer{
+  margin-top: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer a
+{
+  color: var(--grey);
+  text-decoration: none;
+  margin-left: 1rem;
 }
